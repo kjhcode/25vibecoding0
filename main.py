@@ -35,4 +35,37 @@ mbti_careers = {
     "ISFJ": ["간호사 💉", "초등교사 🧒", "도서관 사서 📚"],
     "ESTJ": ["경영 관리자 🧾", "군인 🪖", "프로젝트 리더 🧱"],
     "ESFJ": ["이벤트 플래너 🎀", "HR 매니저 🧑‍💼", "상담 교사 🎓"],
-    "ISTP": ["기계공 🛠️", "응급 구조대원 🚑",]()
+    "ISTP": ["기계공 🛠️", "응급 구조대원 🚑", "기술분석가 🧰"],
+    "ISFP": ["디자이너 🎨", "플로리스트 💐", "사진작가 📸"],
+    "ESTP": ["스포츠 코치 🏋️", "소방관 🔥", "비즈니스 개발자 📈"],
+    "ESFP": ["엔터테이너 🎤", "메이크업 아티스트 💄", "무대 연출가 🎬"]
+}
+
+# 🧠 MBTI 선택
+selected_mbti = st.selectbox("🎯 너의 MBTI를 골라줘!", mbti_types)
+
+# ✨ 추천 결과
+if selected_mbti:
+    mbti_key = selected_mbti[:4]  # 이모지 제거용
+    st.markdown(f"## 🌟 {selected_mbti}에게 어울리는 직업 추천 리스트 💼")
+
+    for job in mbti_careers[mbti_key]:
+        st.markdown(f"- {job}")
+
+    st.success("💖 너에게 꼭 맞는 길을 찾길 바랄게요! 미래가 빛나길 🌠")
+
+# 📌 사이드바
+with st.sidebar:
+    st.markdown("## 🎈 안내")
+    st.markdown("이 앱은 성격 유형을 기반으로 적절한 진로를 추천해주는 진로교육용 도구입니다. ✨")
+    st.markdown("교실에서, 진로상담 시간에, 또는 자기 탐색 활동 시간에 자유롭게 활용하세요! 💡")
+    st.markdown("---")
+    st.markdown("Made with ❤️ by 팬더님")
+
+# 🐼 하단 메시지
+st.markdown("""
+---
+🔮 **진로는 선택의 연속이야.  
+중요한 건 너 자신을 잘 아는 것!  
+MBTI는 너의 첫 걸음이야!** 🌈  
+""")
