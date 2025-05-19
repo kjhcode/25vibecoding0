@@ -9,7 +9,7 @@ st.set_page_config(page_title="진로탐색 도우미", page_icon="🎓", layout
 # 1. 화려한 첫 화면
 # -------------------------------
 st.markdown("""
-    <h1 style='text-align: center; color: #4B8BBE;'>🌟 고2 진로 선택 맞춤 가이드 🌟</h1>
+    <h1 style='text-align: center; color: #4B8BBE;'>🌟 진로 선택 맞춤 가이드 🌟</h1>
     <h3 style='text-align: center; color: #306998;'>MBTI 기반 진로 탐색부터 대입 전략까지 한 번에!</h3>
     <div style='text-align: center;'>
         <img src='https://media.giphy.com/media/3ohs4BSacFKI7A717y/giphy.gif' width='300'>
