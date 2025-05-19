@@ -144,8 +144,6 @@ major_to_universities = {
     "문화콘텐츠학과": ["성균관대학교", "한국예술종합학교", "중앙대학교"],
     "공연예술학과": ["한양대학교", "중앙대학교", "한국예술종합학교"],
 }
-
-}
 universities = major_to_universities.get(selected_major, ["대학 정보 없음"])
 st.write(f"🎓 `{selected_major}` 가 개설된 대학:")
 st.markdown(" - " + "\n - ".join(universities))
