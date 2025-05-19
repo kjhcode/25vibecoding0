@@ -1,4 +1,0 @@
-
-plotly 
-folium 
-koreanize_matplotlib
